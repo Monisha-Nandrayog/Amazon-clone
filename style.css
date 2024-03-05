@@ -165,45 +165,39 @@ nav>.cart:hover{
     font-weight: 400;
     /* margin-top: -10px; */
 }
-
 .second-bar>.first-container>.popup{
-    /* height: 30rem;
-    width:100%; */
-    list-style: none;
-    padding: 10px 20px;
-    border: 1px solid red;
-    animation-name: appear;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 3s;
-    animation-iteration-count: 1;
+    /* top: 0;
+    left: 0; */
     position: absolute;
-    overflow: hidden;
-    font-size: small;
-    overflow-y: scroll;
-}
-.second-bar>.first-container>.popup>ul{
+    height: 100%;
+    width: 250px;
+    background-color: white;
     color: black;
-    background-color: blueviolet;
-    width: 200px;
-    height: 150px;
-    padding: 5px 6px 5px 10px;
-    margin-left: 150px;
-    list-style: none;
-    margin-top: 30px;
-    
+    overflow-y: scroll;
+    display: none;
+    z-index: 999;
 }
-.second-bar>.first-container>.popup:hover{
-    
+.second-bar>.first-container>.popup>article{
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+    padding: 5px;
+    padding-left: 10px;
+    background-color: rgb(7, 7, 49) ;
 }
-@keyframes appear{
-    from{
-        width: 0px;
-    }
-    to{
-        width: 200px;
-    }
+.second-bar>.first-container>.popup>ul>li:nth-child(1){
+    font-size: large;
+    font-weight: bolder;
 }
+.second-bar>.first-container>.popup>ul>li{
+    font-size: medium;
+    padding: 10px;
+}
+.second-bar>.first-container:hover + .popup {
+    display: block;
+    transition: ease-in-out;
+}
+
 .second-bar>article{
     font-size: medium;
     margin: 10px;
